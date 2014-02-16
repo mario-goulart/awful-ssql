@@ -1,0 +1,8 @@
+;; -*- scheme -*-
+
+((synopsis "Enable SSQL mode for awful's database-support eggs")
+ (author "Mario Domenech Goulart")
+ (category db)
+ (license "BSD")
+ (depends ssql (awful "0.40.0"))
+ (test-depends awful-sql-de-lite http-client server-test test))

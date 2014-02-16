@@ -1,0 +1,8 @@
+;; -*- scheme -*-
+(compile -O3 -d1 -J -s awful-ssql.scm)
+(compile -O3 -d1 -s awful-ssql.import.scm)
+
+(install-extension
+ 'awful-ssql
+ '("awful-ssql.so" "awful-ssql.import.so")
+ '((version "0.1.0")))
