@@ -1,6 +1,6 @@
 (use awful http-client intarweb test uri-common)
 
-(define server-uri "http://localhost:8080")
+(define server-uri (sprintf "http://localhost:~a" (server-port)))
 
 (define (get path/vars)
   (let ((val (with-input-from-request
